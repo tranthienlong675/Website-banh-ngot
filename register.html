@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Ký</title>
+    <link rel="stylesheet" href="register-style.css">
+    </head>
+<body>
+    <div class="login-container">
+        <h2>Đăng Ký Tài Khoản Mới</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="reg_username">Tên người dùng (Username):</label>
+                <input type="text" id="reg_username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="reg_email">Email:</label>
+                <input type="email" id="reg_email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="reg_password">Mật khẩu:</label>
+                <input type="password" id="reg_password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="reg_full_name">Họ và Tên:</label>
+                <input type="text" id="reg_full_name" name="full_name" required>
+            </div>
+            <div class="input-group">
+                <label for="reg_avatar">URL Ảnh đại diện (Tùy chọn):</label>
+                <input type="url" id="reg_avatar" name="avatar">
+            </div>
+            
+            <button type="submit">Đăng Ký</button>
+            <p class="mt-20">Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+
+    <script src="register-api.js"></script> 
+    </body>
+</html>
