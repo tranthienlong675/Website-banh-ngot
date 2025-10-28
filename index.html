@@ -3,26 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Đăng Nhập</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bánh Ngọt FitLHU - Trang Chủ</title>
+    <link rel="stylesheet" href="home-style.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Đăng Nhập</h2>
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="username">Tên người dùng:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Đăng Nhập</button>
-            <p id="message" class="message"></p>
-        </form>
-    </div>
 
-    <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tiệm bánh Hoàng tử lớn</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#about">Về Chúng Tôi</a></li>
+                <li><a href="login.html" class="login-btn">Đăng Nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Chào Mừng Đến Với Thiên Đường Bánh Ngọt!</h1>
+                <p>Nơi vị ngọt và đam mê làm bánh hòa quyện. Khám phá những chiếc bánh tươi ngon nhất được làm bằng cả tấm lòng.</p>
+                <a href="#products" class="cta-button">Xem Sản Phẩm Ngay</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Các Món Bánh Nổi Bật</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200?text=Banh+Kem+Dau" alt="Bánh Kem Dâu">
+                    <h3>Bánh Kem Dâu</h3>
+                    <p>Kem tươi béo ngậy cùng dâu tây Đà Lạt.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200?text=Banh+Socola" alt="Bánh Socola">
+                    <h3>Bánh Socola Fudge</h3>
+                    <p>Socola đậm đặc, dành cho tín đồ hảo ngọt.</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200?text=Banh+Mousse" alt="Bánh Mousse">
+                    <h3>Bánh Mousse Chanh Leo</h3>
+                    <p>Chua ngọt thanh mát, giải nhiệt mùa hè.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BanhNgot.FitLHU. Mọi quyền được bảo lưu.</p>
+    </footer>
+
 </body>
 </html>
